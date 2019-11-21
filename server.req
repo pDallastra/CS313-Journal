@@ -1,0 +1,63 @@
+Certificate Request:
+    Data:
+        Version: 0 (0x0)
+        Subject: C=US, ST=Idaho, L=Rexburg, O=Home, OU=Home, CN=paulodallastra/emailAddress=prpdallastra@gmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:a9:ed:1f:7d:b5:28:ed:29:be:90:37:a7:a0:77:
+                    f5:d1:a0:12:47:6d:18:07:33:e2:15:ba:f1:e1:a6:
+                    fb:3d:a7:5c:54:18:bd:ea:79:d4:af:d8:b6:17:83:
+                    a7:7b:59:b1:d4:73:65:17:4b:ec:f8:31:1a:38:e2:
+                    3a:a1:07:95:26:df:9b:38:65:31:df:26:82:da:fb:
+                    b0:4c:6f:e0:25:09:33:f7:42:3b:fb:19:b4:00:cf:
+                    eb:d2:9b:6a:72:c2:1a:ff:c6:bf:a0:b5:ab:34:ed:
+                    a4:71:cd:60:c8:3b:d9:31:31:5c:4a:48:99:cf:e2:
+                    e9:e5:5a:13:20:8f:2a:e9:c1:43:05:b0:f3:8b:97:
+                    0a:30:39:30:8e:95:1f:64:c5:3f:c4:89:d1:b4:ba:
+                    6e:6a:11:af:be:bd:37:0c:db:c3:8e:ed:e8:14:b5:
+                    09:30:12:3c:d0:6d:23:41:d7:7e:c0:2d:d9:0b:00:
+                    65:b0:56:6b:b2:83:5d:6a:32:da:f9:fb:3c:91:aa:
+                    71:87:a0:31:c4:41:f2:31:c0:85:53:e6:a2:94:1b:
+                    f4:a0:ec:0c:3b:32:a9:3e:3c:78:b8:c4:32:e0:a2:
+                    f9:f6:d9:31:11:06:83:78:51:62:7b:c8:c4:5f:97:
+                    a8:1f:93:d7:4c:d7:bf:42:92:84:1d:00:da:9c:88:
+                    07:2b
+                Exponent: 65537 (0x10001)
+        Attributes:
+            challengePassword        :unable to print attribute
+    Signature Algorithm: sha256WithRSAEncryption
+         98:d3:65:e9:c2:1e:7f:1a:1a:6b:34:b1:ad:94:16:7d:11:3f:
+         a7:39:26:29:7c:dd:f8:18:21:f1:15:d5:e0:77:a4:39:41:ca:
+         88:76:de:2c:81:fa:d4:af:23:5b:7d:45:bc:bc:26:06:ef:ad:
+         ce:18:9e:02:3f:85:0f:be:37:97:8f:f2:bb:fe:4c:80:3e:2d:
+         df:3c:8a:ed:59:2b:b6:01:62:8d:9f:75:eb:92:d7:aa:63:de:
+         06:f1:86:12:7a:04:15:72:85:4d:be:20:dd:c7:e6:9a:f2:a5:
+         11:7a:39:71:7e:46:0f:80:bf:e6:67:ea:ce:15:db:76:e7:9b:
+         e4:6e:42:46:76:8e:b6:2f:9e:16:8f:cc:19:60:6a:7b:8f:8e:
+         54:a1:6d:f6:71:88:8f:70:2e:14:02:1c:6a:6a:3b:90:2b:76:
+         ca:23:e7:1b:ad:34:d8:c1:3d:61:90:ad:69:f3:42:31:70:0d:
+         f4:c5:6e:9f:8c:a8:94:ff:d7:ef:27:9f:cc:45:d9:f5:3c:af:
+         5c:46:8c:45:de:20:14:58:15:92:8a:f6:8c:33:d6:07:a6:51:
+         8c:ff:d0:85:a9:bf:37:23:eb:70:f0:ae:5e:16:7a:0d:b7:ef:
+         ec:df:c5:15:5d:0c:a1:14:91:1a:6e:52:41:a8:2c:10:c8:99:
+         00:b2:2d:8a
+-----BEGIN CERTIFICATE REQUEST-----
+MIIC7DCCAdQCAQAwgY0xCzAJBgNVBAYTAlVTMQ4wDAYDVQQIDAVJZGFobzEQMA4G
+A1UEBwwHUmV4YnVyZzENMAsGA1UECgwESG9tZTENMAsGA1UECwwESG9tZTEXMBUG
+A1UEAwwOcGF1bG9kYWxsYXN0cmExJTAjBgkqhkiG9w0BCQEWFnBycGRhbGxhc3Ry
+YUBnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCp7R99
+tSjtKb6QN6egd/XRoBJHbRgHM+IVuvHhpvs9p1xUGL3qedSv2LYXg6d7WbHUc2UX
+S+z4MRo44jqhB5Um35s4ZTHfJoLa+7BMb+AlCTP3Qjv7GbQAz+vSm2pywhr/xr+g
+tas07aRxzWDIO9kxMVxKSJnP4unlWhMgjyrpwUMFsPOLlwowOTCOlR9kxT/EidG0
+um5qEa++vTcM28OO7egUtQkwEjzQbSNB137ALdkLAGWwVmuyg11qMtr5+zyRqnGH
+oDHEQfIxwIVT5qKUG/Sg7Aw7Mqk+PHi4xDLgovn22TERBoN4UWJ7yMRfl6gfk9dM
+179CkoQdANqciAcrAgMBAAGgGTAXBgkqhkiG9w0BCQcxCgwIODgxMjU3MDcwDQYJ
+KoZIhvcNAQELBQADggEBAJjTZenCHn8aGms0sa2UFn0RP6c5Jil83fgYIfEV1eB3
+pDlByoh23iyB+tSvI1t9Rby8Jgbvrc4YngI/hQ++N5eP8rv+TIA+Ld88iu1ZK7YB
+Yo2fdeuS16pj3gbxhhJ6BBVyhU2+IN3H5prypRF6OXF+Rg+Av+Zn6s4V23bnm+Ru
+QkZ2jrYvnhaPzBlganuPjlShbfZxiI9wLhQCHGpqO5Ardsoj5xutNNjBPWGQrWnz
+QjFwDfTFbp+MqJT/1+8nn8xF2fU8r1xGjEXeIBRYFZKK9owz1gemUYz/0IWpvzcj
+63Dwrl4Weg237+zfxRVdDKEUkRpuUkGoLBDImQCyLYo=
+-----END CERTIFICATE REQUEST-----
