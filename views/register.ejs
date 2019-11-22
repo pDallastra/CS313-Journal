@@ -1,45 +1,40 @@
-<%- include('partials/header') %>
-<div class="container mt-5">
-  <h1>Register</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Daily Journal</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
 
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="card">
-        <div class="card-body">
-
-          <!-- Makes POST request to /register route -->
-          <form action="/register" method="POST">
-            <div class="form-group">
-              <label for="text">Name</label>
-              <input type="text" class="form-control" name="name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="username">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <button type="submit" class="btn btn-dark">Register</button>
-          </form>
-
-        </div>
+<body>
+  <div class="all-container flex col">
+    <header>
+      <nav class="flex">
+        <a class="brand-text flex" href="/home">Web Journal</a>
+      </nav>
+    </header>
+    <section class="container center text-center">
+      <div class="sometext flex center col">
+        <h1>Register</h1>
+        <div class="flex center">
+        <form action="/register" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+              <input type="email" class="form-control" name="username" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="align-buttons" style="margin-top: 5rem;">Register</button>
+        </form>
       </div>
-    </div>
-
-    <!-- <div class="col-sm-4">
-      <div class="card social-block">
-        <div class="card-body">
-          <a class="btn btn-block" href="/auth/google" role="button">
-            <i class="fab fa-google"></i>
-            Sign Up with Google
-          </a>
-        </div>
       </div>
-    </div> -->
-
+    </section>
   </div>
-</div>
+  <footer>
+    <h3 class="flex center">Paulo Dallastra</h3>
+  </footer>
+</body>
 
-<%- include('partials/header') %>
+</html>

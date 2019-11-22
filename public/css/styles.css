@@ -1,35 +1,193 @@
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.footer-padding {
-	padding-bottom: 60px;
+@-ms-viewport {
+    width: device-width;
 }
 
-.footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
+.all-container {
+    background-color: #393e46;
+    min-height: 90vh;
+    max-height: fit-content;
+    margin: 0;
+    padding: 0;
 }
 
-.footer p {
-	margin-top: 25px;
-	font-size: 12px;
-  color: #fff;
+.flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    flex-flow: row;
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.space-around {
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    width: 100vw;
+    background-color: #222831;
+    font-size: 24px;
+    color: white;
+
+}
+
+.brand-pos {
+    justify-content: flex-start;
+}
+
+.brand-text {
+    height: 80%;
+    width: 200px;
+    margin: 12px 0 0 30px;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+.container {
+    height: 25rem;
+    width: 34%;
+    margin: auto;
+    color: white;
+    background-color: #e5dfdf;
+    border-radius: 10px;
+}
+
+.container-main {
+    /* height: 90%; */
+    min-height: fit-content;
+    width: 80%;
+    margin: 1% 10%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.posts {
+    width: 90%;
+    margin: 3%;
+}
+
+.newPost {
+    display: none;
+    flex-flow: column;
+}
+
+.postForm {
+    font-size: 20px;
+    margin: auto;
+}
+
+.sometext {
+    margin: 5%;
+    font-size: x-large;
+    padding: 5% 0%;
+}
+
+input {
+    display: block;
+    height: 2rem;
+    width: 12rem;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.align-buttons {
+    margin-top: 10%;
+    width: 12rem;
+    height: 2rem;
+    font-size: 24px;
+    background-color: #272343;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.createNew {
+    margin: auto;
+    height: auto;
+    width: 20rem;
+    font-size: 20px;
+    background-color: #10316b;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.createNew:hover {
+    text-decoration: none;
+}
+
+.cancelPost {
+    margin: auto;
+    height: auto;
+    width: 20rem;
+    font-size: 20px;
+    background-color: #da2d2d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.cancelPost:hover {
+    text-decoration: none;
+}
+
+.logout {
+    margin: auto;
+    margin-right: 2rem;
+    width: 20rem;
+    font-size: 20px;
+    background-color: #da2d2d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    height: 3rem;
+    min-height: fit-content;
+    color: white;
+    font-size: 20px;
+    background-color: #29a19c;
 }

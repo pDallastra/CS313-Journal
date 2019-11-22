@@ -1,16 +1,41 @@
-<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Daily Journal</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
 
-<div class="jumbotron centered">
-  <div class="container">
-    <i class="fas fa-key fa-6x"></i>
-    <h1 class="display-3">Secrets</h1>
-    <p class="lead">Don't keep your secrets, share them anonymously!</p>
-    <hr>
-    <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
-    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
-
+<body>
+  <div class="all-container flex col">
+    <header>
+      <nav class="flex col">
+        <a class="brand-text flex" href="/home">Web Journal</a>
+      </nav>
+    </header>
+    <section class="container center text-center">
+      <div class="sometext">
+        <h1>Welcome to Web Journal</h1><br>
+        <form action="/login" method="POST">
+          <div class="flex row center">
+            <input type="email" class="form-control" name="username" placeholder="Email">
+          </div>
+          <div class="flex row center">
+            <input type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+          <button type="submit" class="align-buttons">Login</button>
+        </form>
+      </div>
+      <div class="flex center row">
+        <p>Don't have an account? <a style="text-decoration: none; color: black" href="/register" role="button">Register</a></p>
+      </div>
+    </section>
   </div>
-</div>
+  <footer>
+    <h3 class="flex center">Paulo Dallastra</h3>
+  </footer>
+</body>
 
-<%- include('partials/footer') %>
+</html>

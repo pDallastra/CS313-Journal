@@ -8,52 +8,62 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <p class="navbar-brand">DAILY JOURNAL</p>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <!-- 6 -->
-      <li id="home"><a href="/home">HOME</a></li>
-      <li id="about"><a href="/about">ABOUT US</a></li>
-      <li id="contact"><a href="/contact">CONTACT US</a></li>
-      <li id="contact"><a href="/logout">LOGOUT</a></li>
-    </ul>
-  </div>
-</nav>
 
 <body>
-  <h1>Home</h1>
-
-  <a role="button" onclick="post()">Create New</a>
-
-  <div id="newPost" style="display: none;">
-    <form action="/submit" method="post">
-      <label>Title</label>
-      <input type="text" name="title" id="title">
-      <label>Content</label>
-      <input type="text" name="content" id="content">
-      <button type="submit">Submit</button>
-    </form>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="brand-pos">
+      <a class="brand-text flex" href="/home">Web Journal</a>
+    </div>
+    <div class="flex">
+      <a class="logout flex center" role="button" href="/logout">Logout</a>
+    </div>
+  </nav>
+  <!-- MAIN CONTAINER -->
+  <div class="all-container flex col">
+    <!-- CONTENT CONTAINER -->
+    <section class="container-main flex center col">
+      <h1 class="flex center">Your Records</h1><br>
+      <a id="createNew" class="createNew flex center" role="button" style="margin-bottom: 2rem;" onclick="post()">Create
+        New</a>
+      <div id="newPost" class="newPost">
+        <div class="postForm flex col text-center">
+          <form action="/submit" method="post">
+            <label>Title</label><br>
+            <input type="text" name="title" id="title" required
+              style="height: 3rem; width: 50rem; font-size: 16px; margin: 2rem 0;"><br>
+            <label>Content</label><br>
+            <input type="text" name="content" id="content" required
+              style="height: 20rem; width: 50rem; text-align: left; font-size: 16px; margin: 2rem 0;">
+            <div class="flex row">
+              <button class="createNew" type="submit" style="margin-bottom: 1rem;">Submit</button>
+            </div>
+        </div>
+        </form>
+        <button class="cancelPost" role="button"onclick="cancel()">Cancel</button>
+        <hr>
+      </div>
+      <div class="posts flex col">
+        <%  posts.reverse().forEach(function(post){ %>
+        <h2 class="flex"><%=post.title%></h2>
+        <p><%=post.content.substring(0, 300) + " ..."%></p>
+        <form action="/delete" method="post">
+          <button name="deleteItem" value="<%=post._id%>" href="/delete">delete</button>
+        </form>
+        <% }) %>
+      </div>
+    </section>
   </div>
-
-  <%  posts.forEach(function(post){ %>
-
-    <h1><%=post.title%></h1>
-    <p>
-    <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post._id%>">Read More</a>
-    </p>
-
-
-    <% }) %>
-
-  <%- include('partials/footer'); -%>
-
+  <footer>
+    <h3 class="flex center no-margin">Paulo Dallastra</h3>
+  </footer>
   <script>
     function post() {
-      var displayPost = document.getElementById('newPost').style.display = "block"
+      var displayPost = document.getElementById('newPost').style.display = "flex"
+    }
+
+    function cancel() {
+      var displayPost = document.getElementById('newPost').style.display = "none"
     }
   </script>
 </body>
