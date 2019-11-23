@@ -8,7 +8,7 @@
 }
 
 .all-container-login {
-    background-color: #393e46;
+    background-color: #f8f8f8;
     min-height: 52rem;
     max-height: fit-content;
     margin: 0;
@@ -17,7 +17,7 @@
 }
 
 .all-container-home {
-    background-color: #393e46;
+    background-color: #ecfcff;
     min-height: 79rem;
     max-height: fit-content;
     margin: 0;
@@ -93,27 +93,44 @@ nav {
     justify-content: flex-start;
 }
 
-.container {
-    height: 27rem;
-    width: 34%;
-    margin: 10% 32% 0;
+.brand-text:hover {
+    text-decoration: none;
     color: white;
-    background-color: #e5dfdf;
+}
+
+.container {
+    height: 30rem;
+    width: 34%;
+    margin: 8% 32% 0;
+    color: #222831;
+    background-color: #e3f6f5;
     border-radius: 10px;
+}
+
+.container button:hover {
+    background-color: #272343e3;
 }
 
 .container-main {
     /* height: 90%; */
     min-height: fit-content;
     width: 80%;
-    margin: 1% 10%;
-    background-color: white;
+    margin: 1.5% 10%;
+    background-color: #6ba8a9;
     border-radius: 10px;
+    color: #222831;
 }
 
+.container-main h1 {
+    margin-top: 1rem;
+}
 .posts {
     width: 90%;
     margin: 3%;
+}
+
+.posts p{
+    text-align: justify;
 }
 
 .newPost {
@@ -142,6 +159,7 @@ nav {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 input {
     display: block;
     height: 2rem;
@@ -149,6 +167,7 @@ input {
     font-size: 18px;
     text-align: center;
     margin-top: 1rem;
+    border-radius: 5px;
 }
 
 .align-buttons {
@@ -174,7 +193,10 @@ input {
 }
 
 .createNew:hover {
+    background-color: #10316bd2;
     text-decoration: none;
+    box-shadow: 3px 3px #c9d1d3;
+    color: white;
 }
 
 .cancelPost {
@@ -190,6 +212,8 @@ input {
 
 .cancelPost:hover {
     text-decoration: none;
+    box-shadow: 3px 3px #c9d1d3;
+    color: white;
 }
 
 .deletePost {
@@ -202,6 +226,11 @@ input {
     text-decoration: none;
     color: white;
 }
+
+.deletePost:hover {
+    box-shadow: 1px 1px #c9d1d3;
+    background-color: #da2d2de8;
+}
 .logout {
     margin: auto;
     margin-right: 2rem;
@@ -212,13 +241,18 @@ input {
     text-decoration: none;
     color: white;
 }
+.logout:hover {
+    background-color: #da2d2dc5;
+    color: white;
+    text-decoration: none;
+}
 
 footer {
     height: 3rem;
     min-height: fit-content;
     color: white;
     font-size: 20px;
-    background-color: #29a19c;
+    background-color: #222831;
 }
 
 .title {
