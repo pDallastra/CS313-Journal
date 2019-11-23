@@ -20,49 +20,55 @@
     </div>
   </nav>
   <!-- MAIN CONTAINER -->
-  <div class="all-container flex col">
+  <div class="all-container-home flex col">
     <!-- CONTENT CONTAINER -->
     <section class="container-main flex center col">
       <h1 class="flex center">Your Records</h1><br>
       <a id="createNew" class="createNew flex center" role="button" style="margin-bottom: 2rem;" onclick="post()">Create
         New</a>
       <div id="newPost" class="newPost">
-        <div class="postForm flex col text-center">
-          <form action="/submit" method="post">
-            <label>Title</label><br>
-            <input type="text" name="title" id="title" required
-              style="height: 3rem; width: 50rem; font-size: 16px; margin: 2rem 0;"><br>
+        <div class="postForm flex col">
+          <div class="title flex colum text-center">
+            <form action="/submit" method="post">
+              <label>Title</label><br>
+              <textarea type="text" name="title" id="title" required cols="60" rows="1"></textarea><br>
+          </div>
+          <div class="content flex">
             <label>Content</label><br>
-            <input type="text" name="content" id="content" required
-              style="height: 20rem; width: 50rem; text-align: left; font-size: 16px; margin: 2rem 0;">
-            <div class="flex row">
-              <button class="createNew" type="submit" style="margin-bottom: 1rem;">Submit</button>
-            </div>
+          </div>
+          <div class="contentBox flex">
+            <textarea type="text" name="content" id="content" cols="60" rows="10" required></textarea>
+          </div>
+          <div class="flex row">
+            <button class="createNew" type="submit" style="margin-bottom: 1rem;">Submit</button>
+          </div>
         </div>
         </form>
-        <button class="cancelPost" role="button"onclick="cancel()">Cancel</button>
+        <button class="cancelPost" role="button" onclick="cancel()">Cancel</button>
         <hr>
       </div>
       <div class="posts flex col">
         <%  posts.reverse().forEach(function(post){ %>
         <h2 class="flex"><%=post.title%></h2>
-        <p><%=post.content.substring(0, 300) + " ..."%></p>
+        <p><%=post.content%></p>
         <form action="/delete" method="post">
-          <button name="deleteItem" value="<%=post._id%>" href="/delete">delete</button>
+          <button class="deletePost" name="deleteItem" value="<%=post._id%>" href="/delete">delete</button>
         </form>
         <% }) %>
       </div>
     </section>
   </div>
   <footer>
-    <h3 class="flex center no-margin">Paulo Dallastra</h3>
+    <h3 class="flex center">Paulo Dallastra</h3>
   </footer>
   <script>
     function post() {
       var displayPost = document.getElementById('newPost').style.display = "flex"
+      var createButton = document.getElementById('createNew').style.display = "none"
     }
 
     function cancel() {
+      var createButton = document.getElementById('createNew').style.display = "flex"
       var displayPost = document.getElementById('newPost').style.display = "none"
     }
   </script>

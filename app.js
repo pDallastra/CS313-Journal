@@ -62,10 +62,6 @@ app.get('/', function (req, res) {
     }
 });
 
-app.get('/register', function (req, res) {
-    res.render('register', {})
-});
-
 app.get('/home', function (req, res) {
     if (req.isAuthenticated()) {
         const checkId = req.user.id;
@@ -80,6 +76,10 @@ app.get('/home', function (req, res) {
     } else {
         res.redirect('/');
     }
+});
+
+app.get('/register', function (req, res) {
+    res.render('register', {})
 });
 
 app.post('/register', function (req, res) {
@@ -118,22 +118,6 @@ app.get('/login', function (req, res) {
     res.render('/')
 });
 
-app.post('/delete', function (req, res) {
-    const id = req.body.deleteItem;
-    Post.findByIdAndRemove(id, function(err){
-        const checkId = req.user.id;
-        Post.find({user_id: checkId}, function(err, posts){
-            res.render('home',{
-                posts: posts
-            });
-    })})
-});
-
-app.get('/logout', function (req, res) {
-    req.logout();
-    res.redirect('/');
-});
-
 app.get('/submit', function (req, res) {
     if (req.isAuthenticated()) {
         res.render('home');
@@ -161,6 +145,22 @@ app.post('/submit', function (req, res) {
             }
         }
     })
+});
+
+app.post('/delete', function (req, res) {
+    const id = req.body.deleteItem;
+    Post.findByIdAndRemove(id, function(err){
+        const checkId = req.user.id;
+        Post.find({user_id: checkId}, function(err, posts){
+            res.render('home',{
+                posts: posts
+            });
+    })})
+});
+
+app.get('/logout', function (req, res) {
+    req.logout();
+    res.redirect('/');
 });
 
 let port = process.env.PORT;

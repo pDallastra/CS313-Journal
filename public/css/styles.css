@@ -7,9 +7,18 @@
     width: device-width;
 }
 
-.all-container {
+.all-container-login {
     background-color: #393e46;
-    min-height: 90vh;
+    min-height: 52rem;
+    max-height: fit-content;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.all-container-home {
+    background-color: #393e46;
+    min-height: 79rem;
     max-height: fit-content;
     margin: 0;
     padding: 0;
@@ -85,9 +94,9 @@ nav {
 }
 
 .container {
-    height: 25rem;
+    height: 27rem;
     width: 34%;
-    margin: auto;
+    margin: 10% 32% 0;
     color: white;
     background-color: #e5dfdf;
     border-radius: 10px;
@@ -123,6 +132,16 @@ nav {
     padding: 5% 0%;
 }
 
+.sometext-register {
+    margin: 5%;
+    font-size: x-large;
+    padding: 5% 0%;
+}
+
+.sometext-register h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
 input {
     display: block;
     height: 2rem;
@@ -173,10 +192,20 @@ input {
     text-decoration: none;
 }
 
+.deletePost {
+    margin-bottom: 2rem;
+    height: auto;
+    width: 7rem;
+    font-size: 12px;
+    background-color: #da2d2d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
 .logout {
     margin: auto;
     margin-right: 2rem;
-    width: 20rem;
+    width: 10rem;
     font-size: 20px;
     background-color: #da2d2d;
     border-radius: 5px;
@@ -191,3 +220,73 @@ footer {
     font-size: 20px;
     background-color: #29a19c;
 }
+
+.title {
+    font-size: 16px; 
+    margin: 2rem 0;
+}
+
+.title label {
+    font-size: 2.5rem;
+}
+
+.content {
+    font-size: 2.5rem; 
+    justify-content: center;
+}
+
+.contentBox {
+    background-color: white;
+    font-size: 16px;
+    justify-content: center;
+    margin: 3rem 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 1024px){
+    .all-container-login {
+        min-height: 83rem;
+    }
+
+    .container {
+        width: 80%;
+        height: 30rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .all-container-login {
+        min-height: 61rem;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 675px)
+{
+    .brand-text {
+        margin-right: 1.5rem;
+        flex-flow: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .all-container-login {
+        min-height: 48rem;
+    }
+
+    .text-register {
+        margin-top: 4rem;
+    }
+    
+}
+
+
