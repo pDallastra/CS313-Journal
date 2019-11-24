@@ -312,8 +312,14 @@ footer {
         width: 70%;
         margin: auto;
     }
-
+    .container-main {
+        /* height: 90%; */
+        margin: auto;
+    }
     .all-container-login {
+        min-height: 48rem;
+    }
+    .all-container-home {
         min-height: 48rem;
     }
 
