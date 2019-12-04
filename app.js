@@ -41,6 +41,7 @@ const userSchema = new mongoose.Schema({
 const postSchema = {
     title: String,
     content: String,
+    postTime: {type: Date, default: Date.now},
     user_id: String
 };
 
@@ -147,6 +148,11 @@ app.post('/submit', function (req, res) {
             }
         }
     })
+});
+
+app.post('/edit', function (req, res) {
+    const id = req.user.id;
+    Post.findOneAndUpdate({content: req.body.content}, {content: req.body.newContent});
 });
 
 app.post('/delete', function (req, res) {

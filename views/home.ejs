@@ -50,7 +50,8 @@
       <div class="posts flex col">
         <%  posts.reverse().forEach(function(post){ %>
         <h2 class="flex"><%=post.title%></h2>
-        <p><%=post.content%></p>
+        <p style="margin-top: 1rem;"><%=post.content%></p>
+        <p style="font-size: smaller;">(<%=post.postTime.getMonth()%>-<%=post.postTime.getDate()%>-<%=post.postTime.getFullYear()%>-<%=post.postTime.getHours()%>:<%=post.postTime.getMinutes()%>)</p>
         <form action="/delete" method="post">
           <button class="deletePost" name="deleteItem" value="<%=post._id%>" href="/delete">delete</button>
         </form>

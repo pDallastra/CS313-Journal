@@ -215,6 +215,25 @@ input {
     box-shadow: 3px 3px #c9d1d3;
     color: white;
 }
+.edit-delete {
+    width: 20rem;
+}
+
+.deletePost {
+    margin-bottom: 2rem;
+    height: auto;
+    width: 7rem;
+    font-size: 12px;
+    background-color:blue;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.deletePost:hover {
+    box-shadow: 1px 1px #c9d1d3;
+    background-color: blue;
+}
 
 .deletePost {
     margin-bottom: 2rem;
@@ -231,6 +250,7 @@ input {
     box-shadow: 1px 1px #c9d1d3;
     background-color: #da2d2de8;
 }
+
 .logout {
     margin: auto;
     margin-right: 2rem;
